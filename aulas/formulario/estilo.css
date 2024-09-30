@@ -1,0 +1,37 @@
+*{
+    background-color: antiquewhite;
+}
+
+form{
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    padding: 10px;
+}
+input,label{
+    padding-bottom: 5px;
+    padding-top: 5px;
+    margin: 5px;
+}
+input{
+    width: 20%;
+}
+table{
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 50%;
+}
+td,th{
+    border: 2px solid #ddd;
+    text-align: left;
+    padding: 8px;
+    border-color: rgb(75, 42, 42);
+}
+
+tr:nth-child(even){
+    background-color: #ddd;
+}
+
+h1{
+    color: rgb(54, 33, 33);
+}

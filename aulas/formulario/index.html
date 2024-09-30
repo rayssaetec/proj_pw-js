@@ -1,0 +1,46 @@
+<html lang="pt-br"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FormTable</title>
+    <link rel="stylesheet" href="estilo.css">
+    <script src="formulario.js"></script>
+</head>
+<body>
+    <h1>Formulário em tabela</h1>
+    <hr>
+    <form id="linhaForm">
+        <input type="text" name="produto" id="produto" placeholder="Digite seu produto:" required>
+        <br><br>
+
+        <input type="text" name="marca" id="marca" placeholder="Digite seu marca:" required>
+        <br><br>
+
+        <input type="text" name="segmento" id="segmento" placeholder="Digite seu segmento:" required>
+        <br><br>
+
+        <input type="number" name="" id="valor" placeholder="Digite sua valor:" required>
+        <br><br>
+
+        <label for="data">Data da venda:</label>
+        <input type="date" name="data" id="data" required>
+        <br><br>
+
+        <button type="button" onclick="adicionarLinha()">Adicionar</button>
+    </form>
+    <br><br>
+    <table id="tabelaDados">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Produto</th>
+                <th>Valor</th>
+                <th>Data</th>
+                <th>Marca</th> 
+                <th>Segmento</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+</body>
+</html>
