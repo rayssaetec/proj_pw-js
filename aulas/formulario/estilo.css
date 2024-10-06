@@ -35,3 +35,11 @@ tr:nth-child(even){
 h1{
     color: rgb(54, 33, 33);
 }
+
+hr{
+    border-color: rgb(54, 33, 33);
+}
+
+button{
+    border-color: rgb(54, 33, 33);
+}
