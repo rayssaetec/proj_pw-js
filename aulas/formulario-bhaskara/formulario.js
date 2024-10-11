@@ -6,17 +6,24 @@ function calcular(){
     const b = document.getElementById("b").value;
     const c = document.getElementById("c").value;
     const x = document.getElementById("x").value;
-    
-    const delta = b*b - 4*a*c;
-    const x1 = (-b + Math.sqrt(delta)) / (2*a);
-    const x2 =  (-b - Math.sqrt(delta)) / (2*a);
 
-    if(x === 1){
-        const res = x1;
-    }else if(x === 2){
-        const res = x2;
+    var delta = b*b - 4*a*c;
+
+    if (delta >= 0){
+        var x1 = (-b + Math.sqrt(delta)) / (2*a);
+        var x2 =  (-b - Math.sqrt(delta)) / (2*a);
     }else{
-        const res = 'Digite 1 ou 2';
+        var x1 = 'O delta é negativo. Equação não possui raízes reais';
+        var x2 =  'O delta é negativo. Equação não possui raízes reais';
+    }
+
+
+    if(x == 1){
+        var res = x1;
+    }else if(x == 2){
+        var res = x2;
+    }else{
+        var res = 'Digite 1 ou 2';
     }
 
     //Se for preenchido vazio
