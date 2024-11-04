@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta nome="author" content="Rayssa" />
+    <title>Introdução JQuery</title>
+    <link rel="stylesheet" href="./" />
+    <script src="././"></script>
+    <script>
+      $(document).ready(function () {
+        $("#flip").click(function () {
+          $("painel").slideDown("slow");
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div id="flip" class="painel-panel-default">
+      Esse texto está sendo mostrado. Slide!
+    </div>
+    <div class="painel-body" id="painel">Mostrando Slide</div>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
